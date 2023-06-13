@@ -129,14 +129,20 @@
   <ItemGroup>
     <ClCompile Include="Cards\Card.cpp" />
     <ClCompile Include="Mtmchkin.cpp" />
+    <ClCompile Include="Players\Healer.cpp" />
+    <ClCompile Include="Players\Ninja.cpp" />
     <ClCompile Include="Players\Player.cpp" />
+    <ClCompile Include="Players\Warrior.cpp" />
     <ClCompile Include="utilities.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Cards\Card.h" />
     <ClInclude Include="Mtmchkin.h" />
     <ClInclude Include="Exception.h" />
+    <ClInclude Include="Players\Healer.h" />
+    <ClInclude Include="Players\Ninja.h" />
     <ClInclude Include="Players\Player.h" />
+    <ClInclude Include="Players\Warrior.h" />
     <ClInclude Include="utilities.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

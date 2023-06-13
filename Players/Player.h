@@ -7,7 +7,7 @@
 const int DEFAULT_FORCE = 5;
 const int DEFAULT_MAX_HP = 100;
 const int START_LEVEL = 1;
-const int START_COINS = 0;
+const int START_COINS = 10;
 const int MAX_LEVEL = 10;
 
 class Player
@@ -22,7 +22,7 @@ public:
 	* @return
 	*	     A new instance of Player.
 	*/
-	Player(const char* name, int maxHp = DEFAULT_MAX_HP, int force = DEFAULT_FORCE);
+	Player(const std::string name);
 
 	/*
 	* Copy Constructor of Player class
@@ -35,7 +35,7 @@ public:
 	/*
 	* Destructor of Player class
 	*/
-	~Player() = default;
+	virtual ~Player() = default;
 
 	/*
 	* Assignment Operator
@@ -46,9 +46,14 @@ public:
 	Player& operator=(const Player& other) = default;
 
 	/*
+	* TODO : Comment
+	*/
+	virtual std::string getJob() const = 0;
+
+	/*
 	* Prints the player's info
 	*/
-	void printInfo() const;
+	virtual void printInfo() const;
 
 	/*
 	* Level up the player
@@ -67,7 +72,7 @@ public:
 	* @return
 	*      The attack strength of the player.
 	*/
-	int getAttackStrength() const;
+	virtual int getAttackStrength() const;
 
 	/*
 	* Buffs the player's force by 'force' points
@@ -79,7 +84,7 @@ public:
 	* Heals the player's health points by 'hp' points
 	* @param hp - The number of points to heal.
 	*/
-	void heal(const int hp);
+	virtual void heal(const int hp);
 
 	/*
 	* Damages the player's health points by 'hp' points
@@ -97,7 +102,7 @@ public:
 	* Add coins to the player
 	* @param coins - The number of coins to add.
 	*/
-	void addCoins(const int coins);
+	virtual void addCoins(const int coins);
 
 	/*
 	* Pay coins from the player
@@ -108,10 +113,12 @@ public:
 
 private:
 	std::string m_name;
+
+protected:
+	int m_level;
+	int m_force;
 	int m_maxHp;
 	int m_healthPoints;
-	int m_force;
-	int m_level;
 	int m_coins;
 };
 #endif

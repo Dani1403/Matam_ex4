@@ -2,29 +2,9 @@
 #include "Player.h"
 
 
-Player::Player(const char* name, int maxHp, int force)
+Player::Player(std::string name) : m_name(name), m_level(START_LEVEL), m_coins(START_COINS), m_maxHp(DEFAULT_MAX_HP), 
+									m_healthPoints(DEFAULT_MAX_HP), m_force(DEFAULT_FORCE)
 {
-	m_name = name;
-	m_level = START_LEVEL;
-	m_coins = START_COINS;
-	if (maxHp <= 0)
-	{
-		m_maxHp = DEFAULT_MAX_HP;
-		m_healthPoints = DEFAULT_MAX_HP;
-	}
-	else
-	{
-		m_maxHp = maxHp;
-		m_healthPoints = maxHp;
-	}
-	if (force <= 0)
-	{
-		m_force = DEFAULT_FORCE;
-	}
-	else
-	{
-		m_force = force;
-	}
 }
 
 void Player::printInfo() const
