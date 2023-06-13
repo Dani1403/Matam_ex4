@@ -6,6 +6,7 @@
 class Healer : public Player
 {
 public:
+	Healer(const std::string& name);
 	void heal(const int hp) override;
 	std::string getJob() const override;
 };

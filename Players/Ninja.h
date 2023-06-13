@@ -6,6 +6,7 @@
 class Ninja : public Player
 {
 public:
+	Ninja(const std::string& name);
 	void addCoins(const int coins) override;
 	std::string getJob() const override;
 };
