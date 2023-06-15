@@ -2,7 +2,7 @@
 #define EX2_PLAYER_H
 
 #include "../utilities.h"
-
+#include "HealthPoints.h"
 
 const int DEFAULT_FORCE = 5;
 const int DEFAULT_MAX_HP = 100;
@@ -46,19 +46,6 @@ public:
 	Player& operator=(const Player& other) = default;
 
 	/*
-	* TODO : Comment
-	*/
-	virtual std::string getJob() const = 0;
-
-	std::string getName() const { return m_name; }
-	int getCoins() const { return m_coins; }
-
-	/*
-	* Prints the player's info
-	*/
-	virtual void printInfo() const;
-
-	/*
 	* Level up the player
 	*/
 	void levelUp();
@@ -69,6 +56,16 @@ public:
 	*      The level of the player.
 	*/
 	int getLevel() const;
+
+	int getCoins() const { return m_coins; }
+
+	int getForce() const { return m_force; }
+
+	virtual std::string getJob() const = 0;
+
+	std::string getName() const { return m_name; }
+
+	int getHp() const { return m_healthPoints.getHealthPoints(); }
 
 	/*
 	* Calculates the attack strength of the player
@@ -120,8 +117,14 @@ private:
 protected:
 	int m_level;
 	int m_force;
-	int m_maxHp;
-	int m_healthPoints;
+	HealthPoints m_healthPoints;
 	int m_coins;
 };
+
+/*
+* Output Stream operator
+*/
+std::ostream& operator<<(std::ostream& os, const Player& player);
+
+
 #endif

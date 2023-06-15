@@ -1,15 +1,11 @@
 #include "Merchant.h"
 
+//TODO : Complete applyChoice and encounter
+
 void applyChoice(Player& player, int choice) 
 {
-	switch (choice) {
-		case(LEAVE) : 
-
-	}
-		
+	return;
 }
-
-Merchant::Merchant() : Card() {}
 
 void Merchant::applyEncounter(Player& player) const
 {
@@ -22,9 +18,4 @@ void Merchant::applyEncounter(Player& player) const
 std::string Merchant::getName() const
 {
 	return "Merchant";
-}
-
-void Merchant::printInfo() const
-{
-	return;
 }

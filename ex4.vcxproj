@@ -133,8 +133,8 @@
     <ClCompile Include="Cards\Merchant.cpp" />
     <ClCompile Include="Cards\Treasure.cpp" />
     <ClCompile Include="Cards\Well.cpp" />
-    <ClCompile Include="Mtmchkin.cpp" />
     <ClCompile Include="Players\Healer.cpp" />
+    <ClCompile Include="Players\HealthPoints.cpp" />
     <ClCompile Include="Players\Ninja.cpp" />
     <ClCompile Include="Players\Player.cpp" />
     <ClCompile Include="Players\Warrior.cpp" />
@@ -147,9 +147,9 @@
     <ClInclude Include="Cards\Merchant.h" />
     <ClInclude Include="Cards\Treasure.h" />
     <ClInclude Include="Cards\Well.h" />
-    <ClInclude Include="Mtmchkin.h" />
     <ClInclude Include="Exception.h" />
     <ClInclude Include="Players\Healer.h" />
+    <ClInclude Include="Players\HealthPoints.h" />
     <ClInclude Include="Players\Ninja.h" />
     <ClInclude Include="Players\Player.h" />
     <ClInclude Include="Players\Warrior.h" />

@@ -8,10 +8,9 @@ const int HEALTH = 1;
 const int FORCE = 2;
 
 class Merchant : public Card {
-	Merchant();
-	void applyEncounter(Player& player) const;
-	std::string getName() const;
-	void printInfo() const;
+	Merchant() : Card() {}
+	void applyEncounter(Player& player) const override;
+	std::string getName() const override;
 };
 
 void applyChoice(Player& player, int choice);

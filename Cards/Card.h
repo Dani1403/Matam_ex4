@@ -31,14 +31,13 @@ public:
     virtual void applyEncounter(Player& player) const = 0;
 
     /*
-     * Prints the card info:
-     *
-     * @return
-     *      void
+    * Getters
     */
-    virtual void printInfo() const = 0;
-
     virtual std::string getName() const = 0;
+    virtual int getForce() const = 0;
+    virtual int getDamage() const = 0;
+    virtual int getCoins() const = 0;
+    virtual int getHeal() const = 0;
 
     /*
      * Here we are explicitly telling the compiler to use the default methods
@@ -53,6 +52,8 @@ protected:
     int m_coins;
     int m_heal;
 };
+
+std::ostream& operator<<(std::ostream& os, const Card& card);
 
 
 #endif //EX2_Card_H

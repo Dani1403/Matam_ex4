@@ -24,9 +24,6 @@
     <ClCompile Include="Cards\Card.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Mtmchkin.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Players\Ninja.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -51,12 +48,12 @@
     <ClCompile Include="Cards\Mana.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Players\HealthPoints.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="utilities.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Mtmchkin.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Players\Player.h">
@@ -90,6 +87,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Cards\Mana.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Players\HealthPoints.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

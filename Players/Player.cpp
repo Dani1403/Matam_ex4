@@ -2,14 +2,14 @@
 #include "Player.h"
 
 
-Player::Player(std::string name) : m_name(name), m_level(START_LEVEL), m_coins(START_COINS), m_maxHp(DEFAULT_MAX_HP), 
-									m_healthPoints(DEFAULT_MAX_HP), m_force(DEFAULT_FORCE)
+Player::Player(std::string name) : m_name(name), m_level(START_LEVEL), m_coins(START_COINS), m_force(DEFAULT_FORCE)
 {
+	m_healthPoints = HealthPoints(DEFAULT_MAX_HP);
 }
 
-void Player::printInfo() const
+std::ostream& operator<<(std::ostream& os, const Player& player)
 {
-	printPlayerInfo(m_name.c_str(), m_level, m_force, m_healthPoints, m_coins);
+	printPlayerDetails(os, player.getName(), player.getJob(), player.getLevel(), player.getForce(),player.getHp(), player.getCoins());
 }
 
 void Player::levelUp()
@@ -38,10 +38,6 @@ void Player::heal(const int hp)
 	if (hp > 0)
 	{
 		m_healthPoints += hp;
-		if (m_healthPoints > m_maxHp)
-		{
-			m_healthPoints = m_maxHp;
-		}
 	}
 }
 
@@ -50,10 +46,6 @@ void Player::damage(const int hp)
 	if (hp > 0)
 	{
 		m_healthPoints -= hp;
-		if (m_healthPoints < 0)
-		{
-			m_healthPoints = 0;
-		}
 	}
 }
 
