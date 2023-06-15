@@ -50,6 +50,9 @@ public:
 	*/
 	virtual std::string getJob() const = 0;
 
+	std::string getName() const { return m_name; }
+	int getCoins() const { return m_coins; }
+
 	/*
 	* Prints the player's info
 	*/
