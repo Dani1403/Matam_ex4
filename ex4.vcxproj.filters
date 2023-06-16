@@ -51,7 +51,10 @@
     <ClCompile Include="Players\HealthPoints.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Cards\BattleCard.cpp">
+    <ClCompile Include="Cards\BattleCards\BattleCard.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Cards\BattleCards\Dragon.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -95,7 +98,10 @@
     <ClInclude Include="Players\HealthPoints.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Cards\BattleCard.h">
+    <ClInclude Include="Cards\BattleCards\BattleCard.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Cards\BattleCards\Dragon.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

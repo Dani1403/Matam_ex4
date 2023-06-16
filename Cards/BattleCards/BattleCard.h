@@ -1,11 +1,12 @@
 #ifndef BATTLECARD_H
 #define BATTLECARD_H
 
-#include "Card.h"
+#include "../Card.h"
 
 class BattleCard : public Card
 {
-	BattleCard() = default;
+public:
+	BattleCard(const int loot, const int damage, const int force) : m_loot(loot), m_force(force), m_damage(damage) {}
 	/*
 	* Getters
 	*/

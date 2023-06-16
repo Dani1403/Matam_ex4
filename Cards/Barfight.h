@@ -5,6 +5,7 @@
 
 class Barfight : public Card
 {
+public:
 	Barfight() = default;
 	std::string getName() const override;
 	void applyEncounter(Player& player) const override;

@@ -128,7 +128,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Cards\Barfight.cpp" />
-    <ClCompile Include="Cards\BattleCard.cpp" />
+    <ClCompile Include="Cards\BattleCards\BattleCard.cpp" />
+    <ClCompile Include="Cards\BattleCards\Dragon.cpp" />
     <ClCompile Include="Cards\Card.cpp" />
     <ClCompile Include="Cards\Mana.cpp" />
     <ClCompile Include="Cards\Merchant.cpp" />
@@ -143,7 +144,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Cards\Barfight.h" />
-    <ClInclude Include="Cards\BattleCard.h" />
+    <ClInclude Include="Cards\BattleCards\BattleCard.h" />
+    <ClInclude Include="Cards\BattleCards\Dragon.h" />
     <ClInclude Include="Cards\Card.h" />
     <ClInclude Include="Cards\Mana.h" />
     <ClInclude Include="Cards\Merchant.h" />

@@ -12,6 +12,7 @@ const int FORCE_BOOST_COST = 10;
 const int FORCE_BOOST = 1;
 
 class Merchant : public Card {
+public:
 	Merchant() : Card() {}
 	void applyEncounter(Player& player) const override;
 	std::string getName() const override;

@@ -5,6 +5,7 @@
 
 class Treasure : public Card
 {
+public:
 	Treasure() = default;
 	void applyEncounter(Player& player) const override;
 	std::string getName() const override;

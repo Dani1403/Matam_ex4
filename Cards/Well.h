@@ -5,6 +5,7 @@
 
 class Well : public Card
 {
+public:
 	Well() = default;
 	std::string getName() const override;
 	void applyEncounter(Player& player) const override;
