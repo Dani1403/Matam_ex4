@@ -4,11 +4,10 @@
 #include "Card.h"
 
 class Mana : public Card {
-	Mana() : Card(0,0,0,MANA_HEAL) {};
+	Mana() = default;
 	void applyEncounter(Player& player) const override;
 	std::string getName() const override;
-	int getHeal() const override;
-private:
+
 	static const int MANA_HEAL = 10;
 };
 

@@ -6,13 +6,17 @@
 const int LEAVE = 0;
 const int HEALTH = 1;
 const int FORCE = 2;
+const int HEALTH_POTION_COST = 5;
+const int HEALTH_POTION = 1;
+const int FORCE_BOOST_COST = 10;
+const int FORCE_BOOST = 1;
 
 class Merchant : public Card {
 	Merchant() : Card() {}
 	void applyEncounter(Player& player) const override;
 	std::string getName() const override;
-};
 
-void applyChoice(Player& player, int choice);
+
+};
 
 #endif //MERCHANT_H

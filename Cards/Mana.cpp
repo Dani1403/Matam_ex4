@@ -9,7 +9,7 @@ void Mana::applyEncounter(Player& player) const
 {
 	if (player.getJob() == "Healer")
 	{
-		player.heal(this->getHeal());
+		player.heal(MANA_HEAL);
 		printManaMessage(true);
 	}
 	else
@@ -17,10 +17,4 @@ void Mana::applyEncounter(Player& player) const
 		printManaMessage(false);
 	}
 }
-
-int Mana::getHeal() const
-{
-	return this->MANA_HEAL;
-}
-
 

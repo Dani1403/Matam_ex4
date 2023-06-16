@@ -13,12 +13,7 @@ void Well::applyEncounter(Player& player) const
 	}
 	else
 	{
-		player.damage(this->getDamage());
+		player.damage(WELL_DAMAGE);
 		printWellMessage(false);
 	}
-}
-
-int Well::getDamage() const
-{
-	return this->WELL_DAMAGE;
 }

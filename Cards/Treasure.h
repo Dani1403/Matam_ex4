@@ -5,11 +5,10 @@
 
 class Treasure : public Card
 {
-	Treasure() : Card(0,0,TREASURE_COINS,0) {}
+	Treasure() = default;
 	void applyEncounter(Player& player) const override;
 	std::string getName() const override;
-	int getCoins() const override;
-private:
+
 	static const int TREASURE_COINS = 10;
 };
 
