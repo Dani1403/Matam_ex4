@@ -1,6 +1,8 @@
 #ifndef EX2_PLAYER_H
 #define EX2_PLAYER_H
 
+#include <string>
+#include <iostream>
 #include "../utilities.h"
 #include "HealthPoints.h"
 

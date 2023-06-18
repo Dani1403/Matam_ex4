@@ -4,11 +4,8 @@
 #ifndef EX4_Card_H
 #define EX4_Card_H
 
-#include <string>
 #include "../Players/Player.h"
 #include "../utilities.h"
-
-
 
 class Card {
 public:

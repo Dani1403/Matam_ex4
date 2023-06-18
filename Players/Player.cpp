@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Player.h"
+#include "../utilities.h"
 
 
 Player::Player(std::string name) : m_name(name), m_level(START_LEVEL), m_coins(START_COINS), m_force(DEFAULT_FORCE)
@@ -10,6 +10,7 @@ Player::Player(std::string name) : m_name(name), m_level(START_LEVEL), m_coins(S
 std::ostream& operator<<(std::ostream& os, const Player& player)
 {
 	printPlayerDetails(os, player.getName(), player.getJob(), player.getLevel(), player.getForce(),player.getHp(), player.getCoins());
+	return os;
 }
 
 void Player::levelUp()

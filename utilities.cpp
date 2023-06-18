@@ -193,11 +193,12 @@ void printLeaderBoardStartMessage()
     cout << endl << "The current ranking of the Team:" << endl;
     cout << "Ranking    Player Name     Level     Force HP    Coins Job" << endl;
 }
-
+/*
 void printPlayerLeaderBoard(int ranking, const Player& player)
 {
     cout << ranking << "          " << player << endl;
 }
+*/
 
 void printGameEndMessage()
 {
