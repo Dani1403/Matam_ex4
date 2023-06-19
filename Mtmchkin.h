@@ -83,7 +83,7 @@ private:
     std::queue < std::shared_ptr<Card> > m_deck;
     std::queue < std::shared_ptr<Player> > m_activePlayers;
     std::queue < std::shared_ptr <Player> > m_winners;
-    std::stack < std::shared_ptr <Player> > m_losers;
+    std::queue < std::shared_ptr <Player> > m_losers;
     int m_rounds;
     int m_numOfActivePlayers;
 };

@@ -52,9 +52,22 @@ void Mtmchkin::playRound()
 	}
 }
 
+void printPlayers(std::queue <std::shared_ptr<Player>> queueToPrint, int& startingRank)
+{
+	while (!queueToPrint.empty())
+	{
+		printPlayerLeaderBoard(++startingRank, *(queueToPrint.front()));
+		queueToPrint.pop();
+	}
+}
+
 void Mtmchkin::printLeaderBoard() const
 {
-
+	printLeaderBoardStartMessage();
+	int startingRank = 0;
+	printPlayers(m_winners, startingRank);
+	printPlayers(m_activePlayers, startingRank);
+	printPlayers(m_losers, startingRank);
 }
 
 bool Mtmchkin::isGameOver() const
