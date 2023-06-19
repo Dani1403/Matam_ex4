@@ -61,6 +61,15 @@ void printPlayers(std::queue <std::shared_ptr<Player>> queueToPrint, int& starti
 	}
 }
 
+void printPlayers(std::stack <std::shared_ptr<Player>> stackToPrint, int& startingRank)
+{
+	while (!stackToPrint.empty())
+	{
+		printPlayerLeaderBoard(++startingRank, *(stackToPrint.top()));
+		stackToPrint.pop();
+	}
+}
+
 void Mtmchkin::printLeaderBoard() const
 {
 	printLeaderBoardStartMessage();
@@ -157,7 +166,7 @@ bool getValidSize(int& size)
 	{
 		size = stoi(tmpString);
 	}
-	catch (std::exception e)
+	catch (std::exception& e)
 	{
 		return false;
 	}

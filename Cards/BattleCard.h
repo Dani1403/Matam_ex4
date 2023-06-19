@@ -6,7 +6,7 @@
 class BattleCard : public Card
 {
 public:
-	BattleCard(const int loot, const int damage, const int force) : m_loot(loot), m_force(force), m_damage(damage) {}
+	BattleCard(const int loot, const int damage, const int force) : m_loot(loot), m_damage(damage), m_force(force) {}
 	/*
 	* Getters
 	*/

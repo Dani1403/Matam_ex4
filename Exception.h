@@ -36,4 +36,4 @@ public:
 	}
 };
 
-#endif EXCEPTION_H
+#endif

@@ -1,6 +1,7 @@
 #ifndef MTMCHKIN_H_
 #define MTMCHKIN_H_
 
+#include "Players/Player.h"
 #include "utilities.h"
 #include "Exception.h"
 
@@ -11,7 +12,7 @@
 #include <stack>
 #include <memory>
 
-#include "Players/Player.h"
+
 #include "Players/Ninja.h"
 #include "Players/Healer.h"
 #include "Players/Warrior.h"
@@ -83,7 +84,7 @@ private:
     std::queue < std::shared_ptr<Card> > m_deck;
     std::queue < std::shared_ptr<Player> > m_activePlayers;
     std::queue < std::shared_ptr <Player> > m_winners;
-    std::queue < std::shared_ptr <Player> > m_losers;
+    std::stack < std::shared_ptr <Player> > m_losers;
     int m_rounds;
     int m_numOfActivePlayers;
 };

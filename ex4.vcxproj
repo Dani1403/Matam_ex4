@@ -143,6 +143,7 @@
     <ClCompile Include="Players\Ninja.cpp" />
     <ClCompile Include="Players\Player.cpp" />
     <ClCompile Include="Players\Warrior.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="utilities.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -164,6 +165,20 @@
     <ClInclude Include="Players\Player.h" />
     <ClInclude Include="Players\Warrior.h" />
     <ClInclude Include="utilities.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="inputs\badFormat_test.txt" />
+    <Text Include="inputs\badFormat_test_start_of_file.txt" />
+    <Text Include="inputs\empty.txt" />
+    <Text Include="tests\allTen_test_expected.txt" />
+    <Text Include="tests\badPlayerInput_test_expected.txt" />
+    <Text Include="tests\dragonDen_test_expected.txt" />
+    <Text Include="tests\gremlinCave_test_expected.txt" />
+    <Text Include="tests\merchantInput_test_expected.txt" />
+    <Text Include="tests\noMonster_test_expected.txt" />
+    <Text Include="tests\roundLimit_test_expected.txt" />
+    <Text Include="tests\witchLair_test_expected.txt" />
+    <Text Include="tool\deck.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

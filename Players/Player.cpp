@@ -1,10 +1,15 @@
 #include <iostream>
+#include "Player.h"
 #include "../utilities.h"
 
 
-Player::Player(std::string name) : m_name(name), m_level(START_LEVEL), m_coins(START_COINS), m_force(DEFAULT_FORCE)
+Player::Player(std::string name)
 {
+	m_name = name;
+	m_level = START_LEVEL;
+	m_force = DEFAULT_FORCE;
 	m_healthPoints = HealthPoints(DEFAULT_MAX_HP);
+	m_coins = START_COINS;
 }
 
 std::ostream& operator<<(std::ostream& os, const Player& player)

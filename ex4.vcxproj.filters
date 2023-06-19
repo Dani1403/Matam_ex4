@@ -66,6 +66,9 @@
     <ClCompile Include="Mtmchkin.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="utilities.h">
@@ -122,5 +125,19 @@
     <ClInclude Include="Mtmchkin.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="tool\deck.txt" />
+    <Text Include="inputs\empty.txt" />
+    <Text Include="inputs\badFormat_test.txt" />
+    <Text Include="inputs\badFormat_test_start_of_file.txt" />
+    <Text Include="tests\allTen_test_expected.txt" />
+    <Text Include="tests\witchLair_test_expected.txt" />
+    <Text Include="tests\roundLimit_test_expected.txt" />
+    <Text Include="tests\noMonster_test_expected.txt" />
+    <Text Include="tests\merchantInput_test_expected.txt" />
+    <Text Include="tests\gremlinCave_test_expected.txt" />
+    <Text Include="tests\dragonDen_test_expected.txt" />
+    <Text Include="tests\badPlayerInput_test_expected.txt" />
   </ItemGroup>
 </Project>

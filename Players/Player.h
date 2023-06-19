@@ -3,7 +3,6 @@
 
 #include <string>
 #include <iostream>
-#include "../utilities.h"
 #include "HealthPoints.h"
 
 const int DEFAULT_FORCE = 5;
