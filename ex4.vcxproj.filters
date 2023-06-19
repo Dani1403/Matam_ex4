@@ -51,16 +51,16 @@
     <ClCompile Include="Players\HealthPoints.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Cards\BattleCards\BattleCard.cpp">
+    <ClCompile Include="Cards\BattleCard.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Cards\BattleCards\Dragon.cpp">
+    <ClCompile Include="Cards\Dragon.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Cards\BattleCards\Witch.cpp">
+    <ClCompile Include="Cards\Witch.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Cards\BattleCards\Gremlin.cpp">
+    <ClCompile Include="Cards\Gremlin.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Mtmchkin.cpp">
@@ -107,16 +107,16 @@
     <ClInclude Include="Players\HealthPoints.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Cards\BattleCards\BattleCard.h">
+    <ClInclude Include="Cards\BattleCard.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Cards\BattleCards\Dragon.h">
+    <ClInclude Include="Cards\Dragon.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Cards\BattleCards\Witch.h">
+    <ClInclude Include="Cards\Witch.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Cards\BattleCards\Gremlin.h">
+    <ClInclude Include="Cards\Gremlin.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Mtmchkin.h">
