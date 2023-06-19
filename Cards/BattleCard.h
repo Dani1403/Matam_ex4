@@ -1,7 +1,7 @@
 #ifndef BATTLECARD_H
 #define BATTLECARD_H
 
-#include "../Card.h"
+#include "Card.h"
 
 class BattleCard : public Card
 {

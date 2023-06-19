@@ -2,7 +2,7 @@
 #define DRAGON_H
 
 #include "BattleCard.h"
-#include "../../Players/Player.h"
+#include "../Players/Player.h"
 
 const int DRAGON_FORCE = 25;
 const int DRAGON_LOOT = 1000;

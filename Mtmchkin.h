@@ -23,10 +23,10 @@
 #include "Cards/Treasure.h"
 #include "Cards/Well.h"
 
-#include "Cards/BattleCards/BattleCard.h"
-#include "Cards/BattleCards/Dragon.h"
-#include "Cards/BattleCards/Gremlin.h"
-#include "Cards/BattleCards/Witch.h"
+#include "Cards/BattleCard.h"
+#include "Cards/Dragon.h"
+#include "Cards/Gremlin.h"
+#include "Cards/Witch.h"
 
 const int MIN_PLAYERS = 2;
 const int MAX_PLAYERS = 6;
