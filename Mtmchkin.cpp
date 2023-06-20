@@ -4,19 +4,17 @@ std::queue < std::shared_ptr<Player> > createPlayers(const int numOfPlayers);
 std::queue < std::shared_ptr<Card> > createDeck(const std::string& fileName);
 bool getValidSize(int& size);
 
-
-
 Mtmchkin::Mtmchkin(const std::string & fileName) : m_rounds(0)
 {
 	printStartGameMessage();
-	m_deck = createDeck(fileName);
+	m_deck = std::move(createDeck(fileName));
 	printEnterTeamSizeMessage();
 	while (!getValidSize(m_numOfActivePlayers))
 	{
 		printInvalidTeamSize();
 		printEnterTeamSizeMessage();
 	}
-	m_activePlayers = createPlayers(m_numOfActivePlayers);
+	m_activePlayers = std::move(createPlayers(m_numOfActivePlayers));
 }
 
 void Mtmchkin::playRound()
@@ -137,12 +135,14 @@ std::queue < std::shared_ptr<Card> > createDeck(const std::string& fileName)
 		}
 		else
 		{
+			deck.close();
 			throw DeckFileFormatError(numOfCards);
 		}
 		numOfCards++;
 		tmpDeck.push(newCard);
 		if (numOfCards < MIN_DECK_SIZE)
 		{
+			deck.close();
 			throw DeckFileInvalidSize();
 		}
 	}
